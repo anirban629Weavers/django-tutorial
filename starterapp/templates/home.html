@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block body %}
+
+<h1>Hi - {{name}}</h1>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo,
+perspiciatis? Nesciunt magni beatae eos doloremque distinctio, id odio nam
+voluptas illum, rem natus dolorum ea ut nulla minus animi quam eligendi esse!
+Molestiae fuga soluta nihil, sit minus accusantium in iste nostrum voluptas quas
+iusto cupiditate, magnam id, exercitationem sequi dolor recusandae dolore
+consequuntur atque deleniti. Quo quos porro atque, vel beatae eius incidunt
+eligendi sapiente itaque, deserunt similique voluptate nam sit odit magnam
+tempore distinctio quis molestiae harum aperiam consequatur libero quas sint.
+Expedita voluptatem sit, eligendi consectetur eos officia eaque unde veritatis
+inventore similique amet, id quo earum?
+
+<hr />
+<form action="add" method="POST">
+  {% csrf_token %} Enter 1st Number - &nbsp;<input
+    type="text"
+    name="n1"
+  /><br />
+  Enter 2nd Number - <input type="text" name="n2" /> <br />
+  <input type="submit" placeholder="Submit" />
+</form>
+
+{% endblock body %}
