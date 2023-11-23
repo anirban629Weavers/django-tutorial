@@ -46,12 +46,18 @@ Commands
 
   1. Make Migration
 
-     **`python manage.py makemigrations`**
+     - **`python manage.py makemigrations`**
+     - **`python manage.py makemigrations APP_NAME`**
 
   1. Migrate
 
      **`python manage.py migrate`**
 
+     - Sync DB
+       - python manage.py migrate
+
   1. Create Super User
 
      **`python manage.py createsuperuser`**
+
+# CHECK COMMMIT be8b067f886b4d4eac535c5c9079d568e4eeba61 FOR CASUAL AUTH

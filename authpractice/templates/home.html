@@ -1,5 +1,12 @@
 {% extends "base.html" %} {% block body %} Home Page
 <br />
+{% if user.is_authenticated %}
+<br />
+Hello, <h1>{{user.name}}</h1>
+<br />
+<a href="logout">Logout</a>
+{% else %}
 <a href="login">Login</a> | <a href="register">Signup</a>
+{% endif %}
 <br />
 {% endblock body %}
