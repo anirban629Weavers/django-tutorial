@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.contrib.auth.hashers import make_password,check_password
 
 def home(request):
-    return render(request, 'base.html')
+    return render(request, 'home.html')
     
 def register(request):
     if request.method == 'POST':
